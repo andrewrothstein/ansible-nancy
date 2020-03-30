@@ -1,0 +1,23 @@
+---
+- homebrew_tap:
+    name: sonatype-nexus-community/homebrew-nancy-tap
+    state: present
+
+- name: install brew package
+  homebrew:
+    name: nancy
+    state: present
+
+  # relink: brew unlink helm && brew link helm
+- name: (re)link brew package
+  block: 
+  - name: brew unlink package
+    homebrew:
+      name: nancy
+      state: unlinked
+      
+  - name: brew link package
+    homebrew:
+      name: nancy
+      state: linked
+      options: overwrite
