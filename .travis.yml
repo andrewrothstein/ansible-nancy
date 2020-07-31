@@ -8,7 +8,7 @@ branches:
 dist: xenial
 env:
 - OS=alpine_3.11
-- OS=alpine_3.11
+- OS=alpine_3.12
 - OS=alpine_edge
 - OS=archlinux_latest
 - OS=centos_7
@@ -20,6 +20,7 @@ env:
 - OS=ubi8_8.1
 - OS=ubi8_8.2
 - OS=ubuntu_bionic
+- OS=ubuntu_focal
 - OS=ubuntu_xenial
 language: python
 python: '3.7'
