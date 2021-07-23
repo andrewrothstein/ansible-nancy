@@ -1,6 +1,6 @@
 andrewrothstein.nancy
 =========
-![Build Status](https://github.com/andrewrothstein/ansible_nancy/actions/workflows/build.yml/badge.svg)
+![Build Status](https://github.com/andrewrothstein/ansible-nancy/actions/workflows/build.yml/badge.svg)
 
 Installs [nancy](https://github.com/sonatype-nexus-community/nancy).
 
