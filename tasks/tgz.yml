@@ -2,7 +2,7 @@
 - name: look for existing install in {{ nancy_install_dir }}
   become: '{{ nancy_privilege_escalate }}'
   become_user: root
-  changed_when: False
+  changed_when: false
   stat:
     path: '{{ nancy_install_dir }}'
   register: nancy_binary
@@ -27,7 +27,7 @@
       become: '{{ nancy_privilege_escalate }}'
       become_user: root
       unarchive:
-        remote_src: yes
+        remote_src: true
         src: '{{ nancy_tmp_archive }}'
         dest: '{{ nancy_install_dir }}'
         creates: '{{ nancy_install_exe }}'
