@@ -1,12 +1,12 @@
 ---
 # defaults file for nancy
-nancy_ver: v1.0.30
+nancy_ver: v1.0.33
 nancy_os: linux
 nancy_arch: amd64
 nancy_mirror: https://github.com/sonatype-nexus-community/nancy/releases/download
 
 nancy_parent_install_dir: /usr/local
-nancy_privilege_escalate: True
+nancy_privilege_escalate: true
 
 nancy_checksums:
   v1.0.17:
@@ -69,3 +69,18 @@ nancy_checksums:
     windows-386: sha256:7edcbab9b2f1f20ce29c808e5da27cf93122273c3d7e0f0deded7cc6f144fa43
     # https://github.com/sonatype-nexus-community/nancy/releases/download/v1.0.30/nancy-v1.0.30-windows-amd64.zip
     windows-amd64: sha256:8102a4d99d682bbeef3b63505d2ad0930412ef68148e7eb0f3ae26630833410f
+  v1.0.33:
+    # https://github.com/sonatype-nexus-community/nancy/releases/download/v1.0.33/nancy-v1.0.33-darwin-amd64.tar.gz
+    darwin-amd64: sha256:8f21786b60ebf3c4a7eef51a726d75293465dee8bd4dc37da5975ca04a22b468
+    # https://github.com/sonatype-nexus-community/nancy/releases/download/v1.0.33/nancy-v1.0.33-darwin-arm64.tar.gz
+    darwin-arm64: sha256:37426a608c4cd0c23beda70cdc9a4092283e558c601e6302b6932e45b4caf6aa
+    # https://github.com/sonatype-nexus-community/nancy/releases/download/v1.0.33/nancy-v1.0.33-linux-386.tar.gz
+    linux-386: sha256:6766933eda8b44faf64a244912dbcde754f9f1c4a5069749525d70466f95b047
+    # https://github.com/sonatype-nexus-community/nancy/releases/download/v1.0.33/nancy-v1.0.33-linux-amd64.tar.gz
+    linux-amd64: sha256:f58ef5dfad19e50f74635d1dab8e44ae74ff7d572ff18a5b71e27037bf9d2533
+    # https://github.com/sonatype-nexus-community/nancy/releases/download/v1.0.33/nancy-v1.0.33-linux-arm64.tar.gz
+    linux-arm64: sha256:6301e2469d2e8869880cbdea99f6c6c5afb3410af6daed58669292a9d593316b
+    # https://github.com/sonatype-nexus-community/nancy/releases/download/v1.0.33/nancy-v1.0.33-windows-386.zip
+    windows-386: sha256:3c0b9dabd71bcea26bd2a6fb33cece24c92afdc4e9175848bf17a8b15ed00b7b
+    # https://github.com/sonatype-nexus-community/nancy/releases/download/v1.0.33/nancy-v1.0.33-windows-amd64.zip
+    windows-amd64: sha256:039b971abc43fd4de04acb5eb8ce77ef0981aa37efc5617a70d1e3ecd5ef8c5d
