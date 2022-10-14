@@ -1,8 +1,11 @@
 ---
 # defaults file for nancy
-nancy_ver: v1.0.37
-nancy_os: linux
-nancy_arch: amd64
+nancy_ver: v1.0.41
+nancy_arch_map:
+  386: 386
+  aarch64: arm64
+  arm64: arm64
+  x86_64: amd64
 nancy_mirror: https://github.com/sonatype-nexus-community/nancy/releases/download
 
 nancy_parent_install_dir: /usr/local
@@ -144,3 +147,48 @@ nancy_checksums:
     windows-386: sha256:7eb889a2986fc60fd19213816da9d3b80116861902f3565c0cca52e03ee2f9eb
     # https://github.com/sonatype-nexus-community/nancy/releases/download/v1.0.37/nancy-v1.0.37-windows-amd64.zip
     windows-amd64: sha256:0155ca1bf2e12de92df2b15a0112a2700c188cc2ae57864b91fe63cd5708ed65
+  v1.0.38:
+    # https://github.com/sonatype-nexus-community/nancy/releases/download/v1.0.38/nancy-v1.0.38-darwin-amd64.tar.gz
+    darwin-amd64: sha256:f5930541f631dd922ac0806c763707c84645e19bcc6d5ea4b2c7e920236babde
+    # https://github.com/sonatype-nexus-community/nancy/releases/download/v1.0.38/nancy-v1.0.38-darwin-arm64.tar.gz
+    darwin-arm64: sha256:c96f477bdb27d2b93573cdaebb420fb73b845fcc9b7692be51e3d2f95a656308
+    # https://github.com/sonatype-nexus-community/nancy/releases/download/v1.0.38/nancy-v1.0.38-linux-386.tar.gz
+    linux-386: sha256:7ac8750f942b5e491363c9152794202b3c28bd15a1248c00304e2f306447684c
+    # https://github.com/sonatype-nexus-community/nancy/releases/download/v1.0.38/nancy-v1.0.38-linux-amd64.tar.gz
+    linux-amd64: sha256:8142f7f5522d867f46cb943f34b3d360d92d3031d758b4a3552c6a445e398384
+    # https://github.com/sonatype-nexus-community/nancy/releases/download/v1.0.38/nancy-v1.0.38-linux-arm64.tar.gz
+    linux-arm64: sha256:85ad46e72ee769f8d8d513d9b9d4ff3a1b42b8f25ff56d4f2b2f3923d5b750cc
+    # https://github.com/sonatype-nexus-community/nancy/releases/download/v1.0.38/nancy-v1.0.38-windows-386.zip
+    windows-386: sha256:c088fd6b331cef6e8863275fe92cbe705425733431771aae3e834f8b1eee7aa7
+    # https://github.com/sonatype-nexus-community/nancy/releases/download/v1.0.38/nancy-v1.0.38-windows-amd64.zip
+    windows-amd64: sha256:604422017471c8407f7696f9db87a566d0ea5e8b2af9616dfab10e8024859b74
+  v1.0.39:
+    # https://github.com/sonatype-nexus-community/nancy/releases/download/v1.0.39/nancy-v1.0.39-darwin-amd64.tar.gz
+    darwin-amd64: sha256:5ce5fbba78a45a588aa9d8f46820556847ad9e07249651a1438662dbd38d73cc
+    # https://github.com/sonatype-nexus-community/nancy/releases/download/v1.0.39/nancy-v1.0.39-darwin-arm64.tar.gz
+    darwin-arm64: sha256:42987561d6718f156ab3a77ba3588193229cbcf4a65ae369ee64878ede9ee46f
+    # https://github.com/sonatype-nexus-community/nancy/releases/download/v1.0.39/nancy-v1.0.39-linux-386.tar.gz
+    linux-386: sha256:daeef6fe71e41f3037e522c7216e24f3993eaf69de93b8bc7d332948b520b9f7
+    # https://github.com/sonatype-nexus-community/nancy/releases/download/v1.0.39/nancy-v1.0.39-linux-amd64.tar.gz
+    linux-amd64: sha256:54f26e2608ea47d14d98a60cb0c93198671de798736424531d357727137358c5
+    # https://github.com/sonatype-nexus-community/nancy/releases/download/v1.0.39/nancy-v1.0.39-linux-arm64.tar.gz
+    linux-arm64: sha256:ea4766fd43f5ef02c6178c34c1d7eaef5adf279219a0059505e1c4ca69c787f5
+    # https://github.com/sonatype-nexus-community/nancy/releases/download/v1.0.39/nancy-v1.0.39-windows-386.zip
+    windows-386: sha256:b51c34710715219ad1f40d6eefec432669eedf50fd1339213f5d1872afe0f364
+    # https://github.com/sonatype-nexus-community/nancy/releases/download/v1.0.39/nancy-v1.0.39-windows-amd64.zip
+    windows-amd64: sha256:8fe5bc02fee34001a99278e3bcd2701855f23bcb118caebc48711fedac3104fe
+  v1.0.41:
+    # https://github.com/sonatype-nexus-community/nancy/releases/download/v1.0.41/nancy-v1.0.41-darwin-amd64.tar.gz
+    darwin-amd64: sha256:8b5690de202bac66fa602a63c5f80ec05b0da895774970dc01a8e133437ac56e
+    # https://github.com/sonatype-nexus-community/nancy/releases/download/v1.0.41/nancy-v1.0.41-darwin-arm64.tar.gz
+    darwin-arm64: sha256:dd63fc5872638084edbf4cc0516ab480ae459ca1e359b6ddf895d3d7fd69be12
+    # https://github.com/sonatype-nexus-community/nancy/releases/download/v1.0.41/nancy-v1.0.41-linux-386.tar.gz
+    linux-386: sha256:a447d1da51b2f6175a5ea5ff35f4830a9d311b678fb15a45c4376cf56e7aa6c9
+    # https://github.com/sonatype-nexus-community/nancy/releases/download/v1.0.41/nancy-v1.0.41-linux-amd64.tar.gz
+    linux-amd64: sha256:30237d92e5db0ea86e138350bb7db35796d2dffd4c2e6d9264c051d2cc97851a
+    # https://github.com/sonatype-nexus-community/nancy/releases/download/v1.0.41/nancy-v1.0.41-linux-arm64.tar.gz
+    linux-arm64: sha256:f47f13bed935d24feede20668225b6e4dff62ba8a872e9bc111b02db50997be5
+    # https://github.com/sonatype-nexus-community/nancy/releases/download/v1.0.41/nancy-v1.0.41-windows-386.zip
+    windows-386: sha256:7e690dd2fa1864884da0462451351116cf21792d01532bc39c87dcd50633d362
+    # https://github.com/sonatype-nexus-community/nancy/releases/download/v1.0.41/nancy-v1.0.41-windows-amd64.zip
+    windows-amd64: sha256:071f513d9caa6f6523fc0886f8cf910a2a46a9bd87adbf10c9f16f18b0c4e52a

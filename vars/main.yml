@@ -1,5 +1,7 @@
 ---
 # vars file for nancy
+nancy_os: '{{ ansible_system | lower }}'
+nancy_arch: '{{ nancy_arch_map[ansible_architecture] }}'
 nancy_platform: '{{ nancy_os }}-{{ nancy_arch }}'
 nancy_archive: nancy-{{ nancy_ver }}-{{ nancy_platform }}.{{ nancy_archive_type | default("tar.gz") }}
 nancy_tmp_archive: /tmp/{{ nancy_archive }}
