@@ -1,9 +1,13 @@
 ---
-- hosts: all
+- name: Testing andrewrothstein.nancy
+  hosts: all
   roles:
-  - role: '{{ playbook_dir }}'
+    - role: '{{ playbook_dir }}'
   tasks:
-  - command: nancy --version
-    register: nancy_test_output
-  - debug:
-      msg: '{{ nancy_test_output.stdout }}'
+    - name: Executing 'nancy --version'
+      ansible.builtin.command: nancy --version
+      changed_when: false
+      register: nancy_test_output
+    - name: Output from 'nancy --version'
+      ansible.builtin.debug:
+        msg: '{{ nancy_test_output.stdout }}'
