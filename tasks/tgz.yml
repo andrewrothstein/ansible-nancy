@@ -24,6 +24,9 @@
         path: '{{ nancy_install_dir }}'
         state: directory
         mode: '755'
+    - name: Installing andrewrothstein.unarchivedeps
+      ansible.builtin.include_role:
+        name: andrewrothstein.unarchivedeps
     - name: Unarchive nancy {{ nancy_ver }} from {{ nancy_tmp_archive }}
       become: '{{ nancy_privilege_escalate }}'
       become_user: root
